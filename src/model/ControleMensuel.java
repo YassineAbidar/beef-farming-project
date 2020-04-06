@@ -19,7 +19,6 @@ public class ControleMensuel {
     private Date date;
     private Bovin bovin;
     private ImporteRace importeRace;
-
     public long getId() {
         return id;
     }

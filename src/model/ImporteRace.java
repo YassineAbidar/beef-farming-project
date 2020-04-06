@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class ImporteRace {
     private long id;
-    private List<ControleMensuel> controleMensuels;//bovins
+    private List<ControleMensuel> controleMensuels;// so list of bovins
     private Fournisseur fournisseur;
     private Import importe;
     private BigDecimal prix;//pour le kg

@@ -5,9 +5,9 @@
  */
 package controller;
 
-
 import com.jfoenix.controls.JFXButton;
 import dataBase.ConnectBd;
+import de.jensd.fx.glyphs.GlyphsDude;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,30 +24,29 @@ import javafx.scene.layout.Pane;
  *
  * @author yassine
  */
-public class MainController implements Initializable{
-
+public class MainController implements Initializable {
+    
     @FXML
     private BorderPane principalBorder;
     @FXML
     private JFXButton test;
     @FXML
     private JFXButton tesrbuttn;
-
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         ConnectBd.getconnection();
+//        principalBorder.getChildren().addAll(GlyphsDude.createIcon(FontAwesomeIcons.BARCODE, "70px"));
+//        principalBorder.setCenter(GlyphsDude.createIcon(FontAwesomeIcons.BARCODE, "70px"));
     }
-
+    
     @FXML
     private void funcTest(ActionEvent event) throws IOException {
-         Pane root = null;
+        AnchorPane root = null;
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/TESTCenter.fxml"));
         root = loader.load();
         principalBorder.setCenter(root);
     }
-
-  
-    }
     
-
+}

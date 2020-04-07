@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="principalBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="879.0" prefWidth="1301.0" stylesheets="@../css/menuresponsive.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<BorderPane fx:id="principalBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="1320.0" stylesheets="@../css/maincontroller.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER" />
+      <HBox prefHeight="132.0" prefWidth="1320.0" style="-fx-background-color: #FFC107;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="194.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/images.jpg" />
+               </image>
+            </ImageView>
+         </children></HBox>
    </top>
    <left>
-      <VBox prefHeight="712.0" prefWidth="186.0" style="-fx-background-color: #4DB6AC;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="824.0" prefWidth="191.0" style="-fx-background-color: #00BCD4;" BorderPane.alignment="CENTER">
          <children>
-            <JFXButton fx:id="test" onAction="#funcTest" prefHeight="60.0" prefWidth="188.0" text="Accuiell" />
-            <JFXButton layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="188.0" text="Bouvin" />
-            <JFXButton layoutX="10.0" layoutY="70.0" prefHeight="60.0" prefWidth="188.0" text="Race" />
-            <JFXButton layoutX="10.0" layoutY="130.0" prefHeight="60.0" prefWidth="188.0" text="Evolution" />
-            <JFXButton layoutX="10.0" layoutY="190.0" prefHeight="60.0" prefWidth="188.0" text="Controls" />
-            <JFXButton layoutX="10.0" layoutY="250.0" prefHeight="60.0" prefWidth="188.0" text="Fournisseur" />
+            <JFXButton fx:id="test" alignment="CENTER" onAction="#funcTest" prefHeight="60.0" prefWidth="194.0" text="Accuiell">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="30" style="-fx-color: #fff;" />
+               </graphic></JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="193.0" text="Bouvin" />
+            <JFXButton layoutX="10.0" layoutY="70.0" prefHeight="60.0" prefWidth="193.0" text="Race" />
+            <JFXButton layoutX="10.0" layoutY="130.0" prefHeight="60.0" prefWidth="193.0" text="Evolution" />
+            <JFXButton layoutX="10.0" layoutY="190.0" prefHeight="60.0" prefWidth="195.0" text="Controls" />
+            <JFXButton layoutX="10.0" layoutY="250.0" prefHeight="60.0" prefWidth="193.0" text="Fournisseur" />
             <VBox alignment="CENTER" prefHeight="183.0" prefWidth="186.0">
                <children>
-                  <JFXButton prefHeight="50.0" prefWidth="186.0" />
-                  <JFXButton layoutX="10.0" layoutY="75.0" prefHeight="50.0" prefWidth="186.0" />
+                  <JFXButton prefHeight="50.0" prefWidth="191.0" text="Button1" />
+                  <JFXButton layoutX="10.0" layoutY="75.0" prefHeight="50.0" prefWidth="191.0" text="Butto2" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <JFXButton fx:id="tesrbuttn" prefHeight="55.0" prefWidth="187.0" />
-                  <JFXButton layoutX="10.0" layoutY="81.0" prefHeight="55.0" prefWidth="187.0" text="Log Out" />
+                  <JFXButton fx:id="tesrbuttn" prefHeight="55.0" prefWidth="194.0" />
+                  <JFXButton layoutX="10.0" layoutY="81.0" prefHeight="55.0" prefWidth="192.0" text="Log Out">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="30" />
+                     </graphic></JFXButton>
                </children>
             </VBox>
          </children>
       </VBox>
    </left>
    <center>
-      <Pane prefHeight="735.0" prefWidth="1113.0" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="807.0" prefWidth="1120.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
